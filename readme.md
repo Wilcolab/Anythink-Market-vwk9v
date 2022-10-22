@@ -9,5 +9,22 @@ Please find more info about each part in the relevant Readme file ([frontend](fr
 When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
 
 ## First setup
+1. Install the latest version of docker and verify if its running by running the following:
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+> docker -v and docker-compose -v.
+
+2. Go to the project root directory in order to load Anythink backend and frontend and run:
+
+> docker-compose up
+
+3. If the setup works correctly visit the following link [Ping](http://localhost:3000/api/ping) it should return the following message:
+
+    {
+        "msg":"Pong! Seems like Everythink is working, great job!"
+    }
+
+4. Check if the backend is connected to the frontend by Creating a new user using the [Register](http://localhost:3000/api/ping) endpoint.
+
+
+Now you can run your project.
+
